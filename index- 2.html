@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homeworks - 2</title>
+</head>
+
+<body>
+    <script>
+        var a = parseInt(prompt("Веди число А"));
+        var b = parseInt(prompt(" Веди число В"));
+        result = (a + b < 4) ? "мало" : "Много";
+        document.write("Завдання №1 " + result);
+        document.write("</br>")
+        document.write("</br>")
+
+        var message;
+        var login = prompt("ведіть ім'я: Вася , Директор, або нічього не водьте!");
+        (login == 'Вася') ? message = "Привіт": (login == "Директор") ?
+            message = "Доброго дня" : (login == '') ? message = "Нема Логіна" :
+            message = ' Ви вели щось не с цього списку, ви вели ----- ' + login;
+        document.write("Завдання №2 " + message);
+        document.write("</br>")
+        document.write("</br>")
+
+
+
+
+        var a2 = parseInt(prompt("Ведіть число А "));
+        var b2 = parseInt(prompt(" Ведіть число В, яке повино бути більше за число А"));
+        cukl = [];
+        for (var i = a2; i < b2; i++) {
+            cukl[i] = i;
+        };
+        if (a2 == cukl[i]) {
+            document.write(a2, b2);
+        };
+
+        if (a2 < b2) {
+            var i = a2
+            var sum = 0;
+            var list = "";
+            while (i < b2) {
+                sum += i;
+                if (i % 2 !== 0) {
+                    list += " " + i;
+                }
+                i++;
+            }
+            document.write("Сума чисел від А до В рівна " + sum);
+            if (list.length > 0) {
+                document.write("<p>" + "В числовому ряді від А до В знайдені непарні числа:" + list);
+            } else {
+                document.write("<p>" + "В числовому ряді від А до В не знайдені  непарні числа!");
+            }
+        } else {
+            document.write("Умова А < В не виконується!")
+        }
+        document.write("</br>")
+        document.write("</br>")
+
+
+
+
+
+
+
+
+        let g = 1
+        for (let i = 1; i < 7; i++) {
+
+            for (let j = 0; j < 15; j++) {
+                document.write(" ")
+                document.write("*")
+
+
+            }
+            document.write("</br>")
+        }
+        document.write("Пряmокутник")
+
+        document.write("</br>")
+        document.write("</br>")
+
+        for (let i = 1; i < 10; i++) {
+
+            for (let j = i; j > 1; j--) {
+                document.write(" ")
+                document.write("*")
+            }
+
+            document.write("</br>")
+        }
+
+
+        document.write("Рівнобедрений трикутник")
+
+        document.write("</br>")
+        document.write("</br>")
+        document.write("</br>")
+        var line = 8;
+        var space = 7;
+        var star = 1;
+        for (var h = 0; h < line; h++) {
+            for (var wsp = 0; wsp < space; wsp++) {
+                document.write("&nbsp\n");
+            }
+            for (var wst = 0; wst < star; wst++) {
+                document.write("*");
+                document.write(" ");
+            }
+            space -= 1;
+            star += 2;
+            document.write("</br>")
+        }
+        document.write("</br>")
+        document.write("Рівнобедрений трикутник")
+        document.write("</br>")
+        var space = 18;
+        var star = 1;
+        var line = 20;
+        for (var i = 0; i <= line; i++) {
+            for (var j = 0; j <= space; j++) {
+                document.write("&nbsp")
+            }
+            for (var k = 0; k < star; k++) {
+                document.write("*")
+
+            }
+            space--;
+            star++;
+            if (i >= line / 2 && i <= line) {
+                star = star - 2;
+                space = space + 2;
+            }
+            document.write("<br>");
+        }
+        document.write("</br>")
+        document.write("Ромб")
+    </script>
+</body>
+
+</html>
